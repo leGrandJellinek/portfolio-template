@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box !important;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+
+html, body{
+    overflow-x: hidden;
+}
+
+body {
+    font-family: "Gilroy";
+    font-weight: 700;
+}
+
+.container {
+    @include container();
+}
+.row {
+    @include row(0);
+}

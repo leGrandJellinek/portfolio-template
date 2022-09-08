@@ -1,14 +1,12 @@
 <template>
-<About />
+<Skill />
 </template>
 
 <script>
-
-import About from "@/components/Main/About.vue";
-
+import Skill from "@/components/Main/Skill.vue";
 export default {
     components: {
-        About
+        Skill
     }
 }
 </script>

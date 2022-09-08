@@ -1,0 +1,67 @@
+.footer {
+    &__container {
+        @extend .container;
+        padding: 120px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+    }
+    &__contacts {
+        &-block{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 25px;
+        }
+        &-title{
+            font-size: 34px;
+            line-height: 42px;
+            text-align: center;
+            color: #070707;
+        }
+        &-info {
+            font-size: 18px;
+            line-height: 22px;
+            text-align: center;
+            font-weight: $Medium;
+            max-width: 280px;
+            width: 100%;
+        }
+        &-btn {
+            outline: none;
+            border: none;
+            background: #070707;
+            padding: 13px 30px;
+            border-radius: 40px;
+            & a {
+                color: $white;
+            }
+        }
+    }
+    &__social {
+        &-block {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 45px;
+        }
+        &-icons {
+            display: flex;
+            gap: 60px;
+            @include media(360px){
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+            }
+        }
+        &-text {
+            max-width: 240px;
+            width: 100%;
+            font-size: 14px;
+            line-height: 17px;
+            text-align: center;
+            color: #828282;
+            font-weight: $Medium;
+        }
+    }
+
+}
