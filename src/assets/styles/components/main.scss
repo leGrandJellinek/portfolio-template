@@ -59,11 +59,6 @@
                 flex-wrap: wrap;
                 gap: 55px;
             }
-            @include media(410px){
-                flex-direction: column;
-                align-items: center;
-                gap: 80px;
-            }
         }
         &-item {
             display: flex;
@@ -119,9 +114,6 @@
             font-weight: $Medium;
             text-decoration-line: underline;
             color: #070707;
-            @include media(410px){
-                width: 276px;
-            }
         }
         &-img {
             max-width: 936px;

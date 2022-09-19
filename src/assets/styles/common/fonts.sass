@@ -1,0 +1,9 @@
+$Gilroy: ('Bold', 700), ('Medium', 500)
+
+
+@each $name, $weight in $Gilroy 
+    @font-face 
+        font-family: 'Gilroy'
+        src: url('@/assets/fonts/Gilroy-#{$name}.ttf')
+        font-weight: $weight
+    

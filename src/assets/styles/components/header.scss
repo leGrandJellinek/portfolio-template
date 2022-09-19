@@ -10,44 +10,17 @@
             width: 100%;
             display: flex;
             justify-content: space-between;
-            @include media(410px){
-                position: absolute;
-                flex-direction: column;
-                max-width: 420px;
-                gap: 68px;
-                top: 0;
-                min-height: 100vh;
-                height: 100%;
-                width: 100%;
-                padding: 50px 0;
-                left: -150%;
-                transition: left 500ms ease;
-                background: white;
-                overflow: auto;
-                z-index: 99999;
-                &.active{
-                    left: 0%;
-                }
-            }
         }
         &-burger {
             outline: none;
             border: none;
             display: none;
-            @include media(410px){
-                display: block;
-            }
         }
         &-link {
             color: #828282;
             transition: color 500ms ease;
             &:hover{
                 color: black;
-            }
-            @include media(410px){
-                font-size: 34px;
-                line-height: 42px;
-
             }
         }
         &-back {
@@ -57,14 +30,6 @@
             top: 60px;
             right: 28px;
             display: none;
-            @include media(410px){
-                display: block;
-            }
-        }
-        @include media(410px){
-            display: flex;
-            border-bottom: 0px;
-            justify-content: flex-end;
         }
     }
     &__content {
@@ -72,28 +37,15 @@
         display: flex;
         flex-direction: column;
         gap: 30px;
-        @include media(410px){
-            gap: 0px;
-        }
         &-up {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            @include media(410px){
-                flex-direction: column;
-                align-items: flex-start;
-                position: relative;
-                z-index: -9999;
-                top: -65px;
-            }
         }
         &-title {
             font-size: 47.3392px;
             line-height: 59px;
             width: 123px;
-            @include media(410px){
-                margin-bottom: 23px;
-            }
         }
         &-info {
             width: 155.65px;
@@ -105,9 +57,6 @@
             transform: rotate(-90deg);
             font-size: 16px;
             line-height: 20px;
-            @include media(410px){
-                display: none;
-            }
         }
         &-bottom {
             & img {
@@ -115,12 +64,6 @@
                 width: 100%;
                 &.mobile{
                     display: none;
-                }
-                @include media(410px){
-                    display: none;
-                    &.mobile {
-                        display: block;
-                    }
                 }
             }
         }

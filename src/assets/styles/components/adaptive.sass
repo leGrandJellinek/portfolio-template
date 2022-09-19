@@ -1,0 +1,55 @@
+@include media(576px)
+    .header
+        &__nav
+            display: flex
+            border-bottom: 0px
+            justify-content: flex-end
+            &-menu 
+                position: absolute
+                flex-direction: column
+                gap: 68px
+                top: 0
+                width: 100%
+                height: 100vh
+                bottom: 0
+                padding: 50px 0
+                left: -150%
+                transition: left 500ms ease
+                background: white
+                overflow: auto
+                z-index: 99999
+                &.active
+                    left: 0
+            &-burger 
+                display: block
+            &-link 
+                font-size: 34px
+                line-height: 42px
+            &-back 
+                display: block
+        &__content
+            gap: 0px
+            &-up
+                flex-direction: column
+                align-items: flex-start
+                position: relative
+                z-index: -9999
+                top: -65px
+            &-title 
+                margin-bottom: 23px
+            &-lang
+                display: none
+            &-bottom 
+                & img 
+                    display: none
+                    &.mobile 
+                        display: block
+    .main
+        &__skill
+            &-block 
+                flex-direction: column
+                align-items: center
+                gap: 80px
+        &__portfolio
+            &-link 
+                width: 276px

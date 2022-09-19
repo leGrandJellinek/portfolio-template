@@ -1,6 +1,6 @@
 <template>
 <main class="main">
-    <About />
+    <About/>
     <Skill />
     <Portfolio/>
 </main>
