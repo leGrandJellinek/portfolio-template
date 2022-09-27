@@ -18,3 +18,9 @@ export default {
   }
 }
 </script>
+
+<style lang="sass">
+.wrapper
+    &.active 
+      overflow: hidden
+</style>
