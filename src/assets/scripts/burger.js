@@ -1,12 +1,12 @@
-const html = document.querySelector("html");
+const body = document.querySelector(".body");
 
 function bodyHiddenOn() {
-    html.style = `overflow-y: hidden;`
+    body.style = `overflow-y: hidden;`
     console.log(1);
 }
 
 function bodyHiddenOff() {
-    html.style = `
+    body.style = `
     overflow-y: visible;`;
     console.log(2);
 }
