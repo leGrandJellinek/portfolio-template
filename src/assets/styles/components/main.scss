@@ -87,7 +87,8 @@
     }
     &__portfolio {
         background: #F6F6F6;
-        padding: 105px;
+        padding-top: 105px;
+        padding-bottom: 105px;
         &-container {
             @extend .container;
             display: flex;
@@ -100,6 +101,10 @@
             flex-direction: column;
             width: 100%;
             gap: 99px;
+            &.mobile {
+                flex-direction: row;
+                display: none;
+            }
         }
         &-item {
             display: flex;

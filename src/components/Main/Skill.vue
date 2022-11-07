@@ -8,6 +8,8 @@
           v-for="skill in getSkillsList"
           :key="skill.id"
           :skill="skill"
+          class="wow animate__fadeInUp"
+          :data-wow-delay="skillAnimDelay(skill.id)"
         />
       </div>
     </div>
@@ -20,6 +22,7 @@
 
 import SkillItem from "@/components/Main/SkillItem.vue";
 import {mapGetters} from "vuex"
+import {WOW} from "wowjs"
 
 export default {
     components: {
@@ -27,7 +30,15 @@ export default {
     },
     computed: {
       ...mapGetters(["getSkillsList"])
+    },
+    mounted(){
+      new WOW({live:false}).init()
+    },
+    methods: {
+      skillAnimDelay(id){
+        const delayTime = ["0.1s", "0.3s", "0.5s","0.7s"]
+        return delayTime[id-1]
+      }
     }
-
 };
 </script>

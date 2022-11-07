@@ -1,7 +1,7 @@
 <template>
 <section class="main__about">
     <div class="main__about-container">
-        <div class="main__about-block">
+        <div class="main__about-block wow fadeInUp">
             <h2 class="main__about-title">About me</h2>
             <p class="main__about-text"><span>Hi, I'm Denis – UX/UI designer from Minsk. 
 I'm interested in design and everything connected with it.</span>
@@ -16,8 +16,11 @@ interfaces" in IT-Academy.</span>
 
 <script>
 
-
+import { WOW } from "wowjs" 
 export default {
+    mounted() { 
+        new WOW({live: false}).init() 
+    }
 }
 
 </script>

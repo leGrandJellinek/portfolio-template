@@ -15,10 +15,10 @@
         </div>
         <div class="footer__social-block">
             <div class="footer__social-icons">
-                <a href="#!"><img src="@/assets/images/icons/in.svg" alt="" class="footer__social-icon"></a>
-                <a href="#!"><img src="@/assets/images/icons/instagram.svg" alt="" class="footer__social-icon"></a>
-                <a href="#!"><img src="@/assets/images/icons/behance.svg" alt="" class="footer__social-icon"></a>
-                <a href="#!"><img src="@/assets/images/icons/surface.svg" alt="" class="footer__social-icon"></a>
+                <a href="https://www.linkedin.com/" target="_blank"><img src="@/assets/images/icons/in.svg" alt="" class="footer__social-icon"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="@/assets/images/icons/instagram.svg" alt="" class="footer__social-icon"></a>
+                <a href="https://www.behance.net/" target="_blank"><img src="@/assets/images/icons/behance.svg" alt="" class="footer__social-icon"></a>
+                <a href="https://dribbble.com/"  target="_blank"><img src="@/assets/images/icons/surface.svg" alt="" class="footer__social-icon"></a>
             </div>
             <div class="footer__social-text">Like me on
 LinkedIn, Instagram, Behance, Dribble</div>
@@ -33,6 +33,21 @@ export default {
 }
 </script>
 
-<style>
-
+<style lang="sass" scoped>
+@mixin iconTransition
+    transition: all 100ms cubic-bezier(0.420, 0.000, 0.580, 1.000)
+.footer
+    &__social
+        &-icons
+            font-size: 2.5em
+            height: 50px
+            overflow: hidden
+            border-bottom: 1px solid #abc
+            & a
+                position: relative
+                top: 30px
+                margin: 0 10px
+                @include iconTransition
+                &:hover
+                    top: 5px
 </style>

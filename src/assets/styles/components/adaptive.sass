@@ -52,3 +52,16 @@
         &__portfolio
             &-link 
                 width: 276px
+                margin-bottom: 20px
+            &-block 
+                display: none
+                &.mobile 
+                    display: flex
+
+@include media(426px)
+    .footer
+        &__social
+            &-icons 
+                gap: 10px
+    .swiper 
+        height: 380px !important
